@@ -1,0 +1,123 @@
+/* "CSS Reset" provided by Josh Comeau (joshcomeau.com/css/custom-css-reset/) */
+
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+}
+/*  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+} 
+/*--------------------------------------------------*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+picture {
+  flex-wrap: wrap;
+  border-radius: .5rem;
+}
+
+/* pricing */
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* product styles */
+.perfume-ad {
+  display: grid;
+  background-color: white;
+  border-radius: 0.5rem;
+  max-width: 600px;
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+  .perfume-ad {
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+   }
+}
+
+.perfume-ad__content {
+  display: grid;
+  padding: 1.5rem;
+}
+
+.perfume-ad__category {
+  font-size: 0.8125rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.perfume-ad__title {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+}
+
+.perfume-ad__price {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+
+/* button */
+.button{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.75em 1.5em;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-weight: 700;
+  font-size: 0.925rem;
+}
+
+.button:hover {
+  background-color: goldenrod;
+  color:hsl(212, 21%, 14%);
+}
